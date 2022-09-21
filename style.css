@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteiner{
+    margin: auto;
+    width: 80%;   
+}
+
+header{
+    background-color: orange;
+    padding: 10px 0px;
+    z-index: 1;
+    
+    
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+  
+}
+.nav-sx , .nav-dx{
+    flex-basis: 30%;
+}
+
+.nav-ct{
+    flex-basis: 66%;
+    text-align: center;
+}
+
+.nav-sx span{
+    color: white;
+    margin: 0px 3px;
+    font-size: 12px;
+}
+
+.nav-ct img{
+    width: 15%;
+    
+}
+
+.nav-dx svg{
+    height: 15px;
+    fill: white;
+}
+
+.section-top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.box{
+    flex-basis: 31%;
+    position: relative;
+    
+}
+.box img{
+    width: 100%;
+}
+
+.img-2{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.box:hover .img-1{
+    display: none;
+}
+
+
+.box:hover .img-2{
+    display: block;
+}
+
+.box svg{
+    height: 20px;
+    
+
+}
+
+.svg-2, .svg-1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 5px 0px;
+    background-color: white;
+    
+     
+}
+
+.svg-2{
+    fill: red;
+    display: none;
+}
+
+
+.box:hover .svg-1{
+    display: none;
+}
+
+
+.box:hover .svg-2{
+    display: block;
+}
+
+.testo{
+    font-size: 12px;
+    position: absolute;
+    top: 80%;
+    left: 0;      
+}
+
+.sconto{
+    background-color: red;
+    color: white;
+    margin-right: 4px;
+    padding: 2px 2px;
+}
+
+.sconto-ts{
+    background-color: green;
+    color: white;
+    padding: 2px 2px;
+}
+
+.descrizione{
+    position: fixed;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+
