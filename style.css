@@ -13,6 +13,8 @@
 header{
     background-color: orange;
     padding: 10px 0px;
+    position: fixed;
+    width: 100%;
     z-index: 1;
     
     
@@ -51,14 +53,16 @@ nav{
 
 .section-top{
     display: flex;
-    justify-content: space-between;
-    position: relative;
+    justify-content: space-between;    
 }
 
 .box{
     flex-basis: 31%;
-    position: relative;
-    
+    position: relative;    
+}
+
+.img{
+   position: relative;
 }
 .box img{
     width: 100%;
@@ -80,20 +84,26 @@ nav{
     display: block;
 }
 
-.box svg{
-    height: 20px;
-    
+.svg{
+    /* position: relative; */
 
 }
-
-.svg-2, .svg-1{
+.svg-2 {
     position: absolute;
     top: 0px;
     right: 0px;
     margin: 5px 0px;
     background-color: white;
-    
-     
+    height: 20px;     
+}
+
+.svg-1{
+    height: 20px; 
+    position: absolute;
+      top: 0;
+     right: 0; 
+     background-color: white;
+     margin: 5px 0px; 
 }
 
 .svg-2{
@@ -114,27 +124,27 @@ nav{
 .testo{
     font-size: 12px;
     position: absolute;
-    top: 80%;
-    left: 0;      
-}
+    top: 70%;
+     }  
 
 .sconto{
     background-color: red;
     color: white;
     margin-right: 4px;
-    padding: 2px 2px;
-}
+    padding: 2px 2px;}
 
 .sconto-ts{
     background-color: green;
     color: white;
     padding: 2px 2px;
-}
+} 
 
-.descrizione{
-    position: fixed;
-    z-index: 3;
-}
+
+
+
+
+
+
 
 
 
