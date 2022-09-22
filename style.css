@@ -10,29 +10,32 @@
     width: 80%;   
 }
 
+/* header */
 header{
-    background-color: orange;
+    background-color: rgb(237, 160, 18);
     padding: 10px 0px;
     position: fixed;
     width: 100%;
     z-index: 1;
-    
-    
+    top: 0;   
 }
 
+/* nav */
 nav{
   display: flex;
   justify-content: space-between;
-  align-items: center;  
-  
+  align-items: center;
+  position: relative;    
 }
+
 .nav-sx , .nav-dx{
     flex-basis: 30%;
 }
 
 .nav-ct{
-    flex-basis: 66%;
-    text-align: center;
+    flex-basis: 60%;
+    position: absolute;
+    left: 44%;
 }
 
 .nav-sx span{
@@ -42,8 +45,7 @@ nav{
 }
 
 .nav-ct img{
-    width: 15%;
-    
+    width: 20%;    
 }
 
 .nav-dx svg{
@@ -51,9 +53,16 @@ nav{
     fill: white;
 }
 
-.section-top{
+.nav-dx{
+    position: absolute;
+    right: 0;
+}
+
+/* main */
+.section-img{
     display: flex;
-    justify-content: space-between;    
+    justify-content: space-between; 
+    margin-top: 50px;   
 }
 
 .box{
@@ -64,6 +73,7 @@ nav{
 .img{
    position: relative;
 }
+
 .box img{
     width: 100%;
 }
@@ -79,31 +89,26 @@ nav{
     display: none;
 }
 
-
 .box:hover .img-2{
     display: block;
 }
 
-.svg{
-    /* position: relative; */
-
-}
 .svg-2 {
-    position: absolute;
     top: 0px;
     right: 0px;
     margin: 5px 0px;
     background-color: white;
-    height: 20px;     
+    height: 20px; 
+    position: absolute;    
 }
 
 .svg-1{
     height: 20px; 
     position: absolute;
-      top: 0;
-     right: 0; 
-     background-color: white;
-     margin: 5px 0px; 
+    top: 0;
+    right: 0; 
+    background-color: white;
+    margin: 5px 0px; 
 }
 
 .svg-2{
@@ -111,42 +116,66 @@ nav{
     display: none;
 }
 
-
 .box:hover .svg-1{
     display: none;
 }
-
 
 .box:hover .svg-2{
     display: block;
 }
 
 .testo{
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
-    top: 70%;
-     }  
+    top: 85%;
+ }  
 
 .sconto{
     background-color: red;
     color: white;
     margin-right: 4px;
-    padding: 2px 2px;}
+    padding: 2px 2px;
+}
 
 .sconto-ts{
     background-color: green;
     color: white;
     padding: 2px 2px;
-} 
+}
 
+.section-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* descrizion */
+.descrizione{
+    flex-basis: 31%;
+}
+
+.prezzo{
+    color: red;
+    margin-right: 5px;
+}
+
+.prezzo-sconto{
+    color: gray;
+    text-decoration-line: line-through ;
+}
+
+
+/* footer */
 footer {
     background-color: rgb(38, 35, 35);
+    margin-top: 30px;
+    padding: 10px 0;
     
 }
 
 .footer-top{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 .footer-sx, .footer-dx {
     flex-basis: 40%;
@@ -155,12 +184,16 @@ footer {
     font-size: 12px;
 }
 
-.footer-dx {
-
-
+.footer-dx{
+    position: absolute;
+    right: 0;
 }
 
-.svg svg{
+.footer-sx span{
+    margin: 0 5px;
+}
+
+.svg-footer svg{
     height: 15px;
     fill: white;
 }
