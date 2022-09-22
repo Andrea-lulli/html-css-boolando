@@ -38,7 +38,7 @@ nav{
     left: 44%;
 }
 
-.nav-sx span{
+.nav-sx .abiti , .abiti-2{
     color: white;
     margin: 0px 3px;
     font-size: 12px;
@@ -56,6 +56,25 @@ nav{
 .nav-dx{
     position: absolute;
     right: 0;
+}
+
+.abiti-1{
+    position: relative;
+}
+
+.abiti-2{
+    display: none;
+    position: absolute;
+    text-decoration-line: underline;
+    top: 0%
+}
+
+.nax-sx:hover .abiti-1{
+    display: none;
+}
+
+.nav-sx:hover .abiti-2{
+    display: block;
 }
 
 /* main */
